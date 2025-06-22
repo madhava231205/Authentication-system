@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>login-signup page</title>
+</head>
+<body>
+    <div class="container" id="signup"  >
+       
+
+        <h1 class="form-title">Register</h1>
+        <form >
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="firstname" id="firstname" name="firstname" required>
+                <label for="firstname" > First Name</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="lastname" id="lastname" name="lastname" required>
+                <label for="lastname" > Last Name</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="email" id="email" name="email" required>
+                <label for="email" >Email Address</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="password" id="password" name="password" required>
+                <label for="password" >Password</label>
+            </div>
+            <button id="loginbutton" type="button" style="text-decoration: none;" >Register Now</button>
+            
+        </form>
+        <p class="or">
+            ---------or---------
+        </p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+            <p>Already Have An Account ?</p>
+            <button id="signinbutton" >Login</button>
+
+        </div>
+    </div>
+
+
+    <div class="container" id="login" style="display: none;" >
+        <h1 class="form-title">Login</h1>
+<form >
+    <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="Email Address" id="email" required>
+        <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+        <label for="password">Password</label>
+        </div>
+        <p class="recover">
+            <a href="resetpassword.html">Forget The Password </a>
+        </p>
+       <button id="homebutton" type="button" style="text-decoration: none;" >Login</button>
+
+</form>
+<p class="or">
+    ---------or---------
+</p>
+<div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+            <p>Don't Have An Account ?</p>
+            <button id="signupbutton">Create Account</button>
+
+        </div>
+    </div>
+    <div class="container" id="homepage" style="display: none;" >
+        <h1 class="form-title" style="color:dodgerblue"><bold>Welcome</bold></h1>
+        <h4>you have succsessfully login into your Account </h4>
+
+</div>
+
+     
+    <script src="script.js"></script>
+</body>
+</html>
